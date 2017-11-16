@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import "./Contact.css";
 
 function Contact(props) {
-  return <div>This is a contact</div>;
+  return (
+    <div className="contact">
+      <span>{props.name}</span>
+    </div>
+  );
 }
 
 export default Contact;
