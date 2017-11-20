@@ -2,7 +2,14 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import Contact from "./components/Contact";
+import ContactList from "./components/ContactList";
+
+const contacts = [
+  { id: 1, name: "Leanne Graham" },
+  { id: 2, name: "Ervin Howell" },
+  { id: 3, name: "Clementine Bauch" },
+  { id: 4, name: "Patricia Lebsack" }
+];
 
 class App extends Component {
   render() {
@@ -13,7 +20,7 @@ class App extends Component {
           <h1 className="App-title">React Contact Manager</h1>
         </header>
 
-        <Contact name="Leanne Graham" />
+        <ContactList contacts={contacts} />
       </div>
     );
   }
